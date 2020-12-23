@@ -1,5 +1,6 @@
 # online-barter-system
 
+# html page activity explain
 index.html - home page
 
 product.html - market showing all items on trade
@@ -20,6 +21,7 @@ add.html - add information of item to be traded
 
 exchange.html - pick previous added item for barter
 
+# css file that bind to html respectively
 style.css
 ->index.html,product.html,product detail.html,account.html
 
