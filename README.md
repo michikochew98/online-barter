@@ -21,18 +21,13 @@ add.html - add information of item to be traded
 exchange.html - pick previous added item for barter
 
 style.css
-->index.html
-->product.html
-->product detail.html
-->account.html
+->index.html,product.html,product detail.html,account.html
 
 profileStyle.css
 ->profile.html
 
 user.css
-->cart.html
-->favourite.html
-->add.html
+->cart.html,favourite.html,add.html
 
 inbox.css
 ->message.html
