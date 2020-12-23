@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Cart</title>
+        <link rel="stylesheet" href="user.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+       <!--header area start-->
+       <header>
+        <div class="logo" href="index.html"><img src="image/logo.png" alt="logo" ></div>
+      </header>
+      <!--header area end-->
+        <!--mobile navigation bar start-->
+        <div class="mobile_nav">
+            <div class="nav_bar">
+                <i class="fa fa-bars nav_btn"></i>
+            </div>
+            <div class="mobile_nav_items">
+                <li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                <li><a href="favourite.html"><i class="fa fa-heart" aria-hidden="true"></i> Favourite</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+                <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i> Message</a></li>
+                <li><a href=""><i class="fa fa-home" aria-hidden="true"></i> Back to Home</a></li>
+                <li><a href=""><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+                <li><a href=""><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
+            </div>
+        </div>
+        <!--mobile navigation bar end-->
+
+        <!--sidebar start-->
+        <div id="sidebarID" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()"> 
+            <li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+            <li><a href="favourite.html"><i class="fa fa-heart" aria-hidden="true"></i> Favourite</a></li>
+            <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+            <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i> Message</a></li>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i> Back to Home</a></li>
+            <li><a href=""><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+            <li><a href=""><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
+        </div>
+        <!--sidebar end-->
+
+        <div id="contentID" class="content">
+           <!--Cart Item Details-->
+            <div class="small-container cart-page">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Owner</th>
+                        <th>Location</th>
+                        <th>Barter</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="image/product/sweater.jpg">
+                                <p><b>Sweater</b></p>
+                                <p>(Available)</p>
+                            </div>
+                        </td>
+                        <td>Owner name</td>
+                        <td>Location address</td>
+                        <td><a href="" class="btn">Barter</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="image/product/teddy.jpg">
+                                <p><b>Teddy</b></p>
+                                <p>(Available)</p>
+                            </div>
+                        </td>
+                        <td>Owner name</td>
+                        <td>Location address</td>
+                        <td><a href="" class="btn">Barter</a></td>
+                    </tr>
+                </table>
+            <div class="total-quantities">
+                <table>
+                    <tr>
+                    <td>Total No. of Products </td>
+                    <td> 2 </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+
+    var mini = true;
+    function toggleSidebar() {
+        if (mini) {
+            /*opening sidebar*/
+            document.getElementById("sidebarID").style.width = "180px";
+            document.getElementById("contentID").style.marginLeft = "180px";
+            this.mini = false;
+        }else {
+            /*closing sidebar*/
+            document.getElementById("sidebarID").style.width = "48px";
+            document.getElementById("contentID").style.marginLeft = "48px";
+            this.mini = true;
+        }
+    }
+    
+
+    </script>
+    </body>
+    </html>

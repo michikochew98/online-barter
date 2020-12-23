@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Profile</title>
+        <link rel="stylesheet" href="profileStyle.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <!--header area start-->
+        <header>
+          <div class="logo" href="index.html"><img src="image/logo.png" alt="logo" ></div>
+        </header>
+        <!--header area end-->
+        <!--mobile navigation bar start-->
+        <div class="mobile_nav">
+            <div class="nav_bar">
+                <i class="fa fa-bars nav_btn"></i>
+            </div>
+            <div class="mobile_nav_items">
+                <li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                <li><a href="favourite.html"><i class="fa fa-heart" aria-hidden="true"></i> Favourite</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+                <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i> Message</a></li>
+                <li><a href=""><i class="fa fa-home" aria-hidden="true"></i> Back to Home</a></li>
+                <li><a href=""><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+                <li><a href=""><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
+            </div>
+        </div>
+        <!--mobile navigation bar end-->
+
+        <!--sidebar start-->
+        <div id="sidebarID" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()"> 
+            <li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+            <li><a href="favourite.html"><i class="fa fa-heart" aria-hidden="true"></i> Favourite</a></li>
+            <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+            <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i> Message</a></li>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i> Back to Home</a></li>
+            <li><a href=""><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+            <li><a href=""><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
+        </div>
+        <!--sidebar end-->
+
+        <div id="contentID" class="content">
+          <div class="row">
+            <div class="image-cropper">
+              <img src="https://i.imgur.com/zIXmVoz.jpg" alt="">
+            </div>
+          </div>
+          <div class="userdesc">
+            <h4><em>Johnson</em></h4>
+            <h4><i class="fa fa-map-marker" aria-hidden="true"></i><em>Address</em></h4>
+          </div>
+          <div class="row">
+            <div class="subheader"><h3>Items Ready to Barter</h3></div>
+            <div class="col-4">
+                <img src="image/categories/accessories.jpg" >
+                <h4>Accessories</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Includes necklace...</p>
+            </div>
+            <div class="col-4">
+                <img src="image/categories/books.jpg" >
+                <h4>Books</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Includes novel...</p>
+            </div>
+            <div class="col-4">
+                <img src="image/categories/clothes.jpg" >
+                <h4>Clothes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Includes blouse...</p>
+            </div>
+            <div class="col-4">
+                <img src="image/categories/accessories.jpg" >
+                <h4>Accessories</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Includes necklace...</p>
+            </div>
+          </div> 
+          <div>
+            <button class="showMoreBtn" onclick="" id="">Show More</button>
+          </div>
+          <div class="row">
+            <div class="subheader"><h3>Items Had Been Exchanged</h3></div>
+            <div class="col-4">
+                <img src="image/categories/accessories.jpg" >
+                <h4>Accessories</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Includes necklace...</p>
+            </div>
+            <div class="col-4">
+                <img src="image/categories/books.jpg" >
+                <h4>Books</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Includes novel...</p>
+            </div>
+            <div class="col-4">
+                <img src="image/categories/clothes.jpg" >
+                <h4>Clothes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Includes blouse...</p>
+            </div>
+            <div class="col-4">
+                <img src="image/categories/accessories.jpg" >
+                <h4>Accessories</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Includes necklace...</p>
+            </div>
+          </div> 
+          <button class="showMoreBtn" onclick="" id="">Show More</button>
+        </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+
+    var mini = true;
+    function toggleSidebar() {
+        if (mini) {
+            /*opening sidebar*/
+            document.getElementById("sidebarID").style.width = "180px";
+            document.getElementById("contentID").style.marginLeft = "180px";
+            this.mini = false;
+        }else {
+            /*closing sidebar*/
+            document.getElementById("sidebarID").style.width = "48px";
+            document.getElementById("contentID").style.marginLeft = "48px";
+            this.mini = true;
+        }
+    }
+
+    </script>
+  </body>
+</html>

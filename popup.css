@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+}
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+}
+  
+.popup .content {
+    position:absolute;
+    top:7%;
+    left:20%;
+    background:#fff;
+    width:750px;
+    height:500px;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+}
+  
+.popup .close-btn a{
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+}
+
+.barter_button button{
+    cursor:pointer;
+    text-align:center;
+    display: inline-block;
+    background: #898989;
+    color: white;
+    padding: 8px 30px;
+    margin: 100px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+    text-decoration: none;
+    border: none;
+  }
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-3{
+  flex-basis: 30%;
+  min-width: 0px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.5s;
+  align-items: center;
+}
+.col-3 img{
+  width: 100%;
+}
+.col-3:hover{
+  transform: translateY(-5px);
+}
+.col-3 p{
+  text-align: center;
+}
